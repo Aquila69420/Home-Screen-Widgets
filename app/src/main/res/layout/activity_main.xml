@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<ProgressBar
+    android:id="@+id/pomodoro_progress_bar"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:layout_centerInParent="true"
+    android:background="@drawable/rounded_corner"
+    android:indeterminateOnly="false"
+    android:progressDrawable="@drawable/circle"
+    tools:progress="100" />
+
+<TextView
+    android:id="@+id/text_view_progress"
+    android:layout_width="51dp"
+    android:layout_height="22dp"
+    android:layout_alignStart="@+id/pomodoro_progress_bar"
+    android:layout_alignTop="@+id/pomodoro_progress_bar"
+    android:layout_alignEnd="@+id/pomodoro_progress_bar"
+    android:layout_alignBottom="@+id/pomodoro_progress_bar"
+    android:layout_marginStart="74dp"
+    android:layout_marginTop="103dp"
+    android:layout_marginEnd="75dp"
+    android:layout_marginBottom="75dp"
+    android:textAlignment="center"
+    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+    android:textColor="#FFFFFF"
+    app:layout_constraintBottom_toBottomOf="@+id/pomodoro_progress_bar"
+    app:layout_constraintEnd_toEndOf="@+id/pomodoro_progress_bar"
+    app:layout_constraintStart_toStartOf="@+id/pomodoro_progress_bar"
+    app:layout_constraintTop_toTopOf="@+id/pomodoro_progress_bar"
+    tools:text="25:00" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignStart="@+id/pomodoro_progress_bar"
+    android:layout_alignEnd="@+id/pomodoro_progress_bar"
+    android:layout_alignBottom="@+id/pomodoro_progress_bar"
+    android:layout_marginStart="45dp"
+    android:layout_marginEnd="46dp"
+    android:layout_marginBottom="5dp"
+    android:textAlignment="center"
+    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+    android:textColor="#F157FF"
+    android:textStyle="bold"
+    tools:text="Ready to focus?" />
+
+</RelativeLayout>
